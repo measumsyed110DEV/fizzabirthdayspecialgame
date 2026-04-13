@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Arial;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#gameArea {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.cake {
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+    animation: fall linear;
+}
+
+@keyframes fall {
+    from {
+        top: -50px;
+    }
+    to {
+        top: 100%;
+    }
+}
+
+#finalMsg {
+    display: none;
+    font-size: 20px;
+    margin-top: 20px;
+}
